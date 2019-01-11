@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Project with JS</title>
+    <meta name="Amirul Ikmal" content="" />
+    <script type="text/javascript">
+        function BtnClick(event) {
+            var clicked = document.getElementById('clickBtn');
+            clicked.style.color = 'yellow';
+            clicked.style.fontSize = '30px';
+            clicked.style.background = 'red';
+        }
+    </script>
+    <style type="text/css">
+        #container {
+            width: 80%;
+            height: 300px;
+            background: #aaa;
+            margin: 10% auto;
+        }
+
+        #clickBtn {
+            width: 50%;
+            height: 100px;
+            background: yellow;
+            margin: 100px 10% 0px 25%;
+            border: 2px solid #111;
+            border-radius: 12px;
+            opacity: 1;
+
+        }
+
+        #clickBtn:hover {
+            opacity: .8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Task -->
+    <!-- Make 3 buttons using HTML then manipulate them using JS -->
+    <!-- 1. Change color of the button on click -->
+    <!-- 2. Change the text sive on the button on click -->
+    <!-- 3. Change the background color of the button -->
+    <div id="container">
+        <button type="button" id="clickBtn" onclick="BtnClick(event)">Click me!</button>
+    </div>
+
+</body>
+
+</html>
